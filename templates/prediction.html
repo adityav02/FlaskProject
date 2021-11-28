@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Prediction Page</title>
+</head>
+<body>
+    
+    <h2>Welcome to Prediction Analysis tool</h2>
+    <h3>Enter the values in the respective text box and hit predict</h3>
+    <form action="/predict" method='POST'>
+        <label for="Age">Age:</label>
+        <input type="number" name="Age" value=""><br><br>
+        <label for="Diabetes">Diabetes:</label>
+        <input type="number" name="Diabetes" value=""><br><br>
+        <label for="BloodPressureProblems">BloodPressureProblems:</label>
+        <input type="number" name="BloodPressureProblems" value=""><br><br>
+        <label for="AnyTransplants">AnyTransplants:</label>
+        <input type="number" name="AnyTransplants" value=""><br><br>
+        <label for="AnyChronicDiseases">AnyChronicDiseases:</label>
+        <input type="number" name="AnyChronicDiseases" value=""><br><br>
+        <label for="Height">Height:</label>
+        <input type="number" name="Height" value=""><br><br>
+        <label for="Weight">Weight:</label>
+        <input type="number" name="Weight" value=""><br><br>
+        <label for="KnownAllergies">KnownAllergies:</label>
+        <input type="number" name="KnownAllergies" value=""><br><br>
+        <label for="HistoryOfCancerInFamily">HistoryOfCancerInFamily:</label>
+        <input type="number" name="HistoryOfCancerInFamily" value=""><br><br>
+        <label for="NumberOfMajorSurgeries">NumberOfMajorSurgeries:</label>
+        <input type="number" name="NumberOfMajorSurgeries" value=""><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <br>
+    <br>
+    <h4>The Predicted value is - {{ value }} </h4>
+</body>
